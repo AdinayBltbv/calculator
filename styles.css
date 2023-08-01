@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
 
 .wrapper {
   height: 100vh;
@@ -24,7 +29,7 @@
   border-radius: 50px;
   padding: 15px 20px;
   background-color: #000;
-  border: 2px solid rgb(126, 181, 217);
+  border: 4px solid rgb(92, 102, 109);
 }
 
 .inputs {
@@ -88,12 +93,13 @@
 
 .charge {
   height: 15px;
-  width: 35px ;
+  width: 35px;
   position: relative;
   cursor: pointer;
   animation-name: charge;
   animation-duration: 10s;
-  animation-direction: reverse;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
 }
 
 @keyframes charge {
